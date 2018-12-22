@@ -26,7 +26,7 @@
                         <p style="">bitcoincash:qru5krtqsdwv8utluc5uzh05ye53unnt8c3577mw7n</p>
                     </div>
                 </div>
-            </div>
+            </div>bitcoincash:qpwr4mqm6sexjenunua4a0gyw4cse3quvydmpwae5z
             <div class="feed">
                 <div class="title">Feed Redpepper261's Chickens using Bitcoin Cash</div>
                 <div class="tags">Chickens</div>
@@ -41,6 +41,20 @@
                     </div>
                 </div>
             </div>
+            <div class="feed">
+                <div class="title">Feed Dashducks's Ducks using Bitcoin Cash</div>
+                <div class="tags">Chickens</div>
+                <div class="video">
+                    <iframe src="https://player.twitch.tv/?channel=dashducks" frameborder="0" allowfullscreen="true" scrolling="no" height="529" width="868"></iframe><a href="https://www.twitch.tv/redpepper261?tt_content=text_link&tt_medium=live_embed" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline;"></a>
+                </div>
+                <div class="payment">
+                    <a class="paybutton" href="#dashducks" rel="modal:open">$0.5 Bitcoin Cash</a>
+                    <div id="dashducks" class="modal" style="text-align:center;">
+                        <img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=bitcoincash:qpwr4mqm6sexjenunua4a0gyw4cse3quvydmpwae5z">
+                        <p style="">bitcoincash:qpwr4mqm6sexjenunua4a0gyw4cse3quvydmpwae5z</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -52,6 +66,12 @@
       });
     });
     $('a[href="#redpepper261"]').click(function(event) {
+      event.preventDefault();
+      $(this).modal({
+        fadeDuration: 100
+      });
+    });
+    $('a[href="#dashducks"]').click(function(event) {
       event.preventDefault();
       $(this).modal({
         fadeDuration: 100

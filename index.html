@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bitcoin Cash Zoo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="zoo.css" media="all">
+
+</head>
+<body>
+    <header>
+
+    </header>
+    <div class="wrapper">
+        <div class="feeds">
+            <div class="feed">
+                <div class="title">Feed RiverForestFarm's Baby Goats using Bitcoin Cash</div>
+                <div class="tags">Goats</div>
+                <div class="video">
+                    <iframe src="https://player.twitch.tv/?channel=riverforestfarm" frameborder="0" allowfullscreen="true" scrolling="no" height="529" width="868"></iframe><a href="https://www.twitch.tv/riverforestfarm?tt_content=text_link&tt_medium=live_embed" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline;"></a>
+                </div>
+                <div class="payment">
+                    <a class="paybutton" href="#riverforestfarm" rel="modal:open">$1 Bitcoin Cash</a>
+                    <div id="riverforestfarm" class="modal" style="text-align:center;">
+                        <img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=bitcoincash:qru5krtqsdwv8utluc5uzh05ye53unnt8c3577mw7n">
+                        <p style="">bitcoincash:qru5krtqsdwv8utluc5uzh05ye53unnt8c3577mw7n</p>
+                    </div>
+                </div>
+            </div>
+            <div class="feed">
+                <div class="title">Feed Redpepper261's Chickens using Bitcoin Cash</div>
+                <div class="tags">Chickens</div>
+                <div class="video">
+                    <iframe src="https://player.twitch.tv/?channel=redpepper261" frameborder="0" allowfullscreen="true" scrolling="no" height="529" width="868"></iframe><a href="https://www.twitch.tv/redpepper261?tt_content=text_link&tt_medium=live_embed" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline;"></a>
+                </div>
+                <div class="payment">
+                    <a class="paybutton" href="#redpepper261" rel="modal:open">$0.5 Bitcoin Cash</a>
+                    <div id="redpepper261" class="modal" style="text-align:center;">
+                        <img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=bitcoincash:qzvxevjglzjwjpwf338neqgvy205ag2u4uxckqm0nu">
+                        <p style="">bitcoincash:qzvxevjglzjwjpwf338neqgvy205ag2u4uxckqm0nu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    $('a[href="#riverforestfarm"]').click(function(event) {
+      event.preventDefault();
+      $(this).modal({
+        fadeDuration: 100
+      });
+    });
+    $('a[href="#redpepper261"]').click(function(event) {
+      event.preventDefault();
+      $(this).modal({
+        fadeDuration: 100
+      });
+    });
+    </script>
+<!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+<style>
+.blocker {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+.modal {
+    box-shadow: 0 0 10px #00000029;
+    border-radius: 2px;
+}
+</style>
+
+</body>
+</html>

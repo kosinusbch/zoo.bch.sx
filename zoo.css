@@ -27,7 +27,8 @@ body, html {
 }
 
 .video {
-    height: 545px;
+    height: 543px;
+    margin-bottom: -35px;
 }
 
 .title {

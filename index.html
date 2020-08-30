@@ -77,6 +77,21 @@
                     </div>
                 </div>
             </div>
+            <div class="feed" id="goats pigs">
+                <div class="title">Feed TangleSheep's Sheep using Bitcoin Cash</div>
+                <div class="tags">Sheep, Goats, Birds</div>
+                <div class="video">
+                    <iframe src="https://player.twitch.tv/?channel=tanglesheep&parent=zoo.bch.sx&muted=true" height="480" width="100%" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+                </div>
+                <div class="payment">
+                    <a class="paybutton" href="#tanglesheep" rel="modal:open">$0.5 Bitcoin Cash</a>
+                    <a class="paybutton" target="_blank" href="https://www.twitch.tv/tanglesheep">Open Livestream</a>
+                    <div id="tanglesheep" class="modal" style="text-align:center;">
+                        <img style="max-width: 305px;width: 100%;" src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=bitcoincash:qruadlgq8tfxvjfwl7l6t33c9cfm04a4zqzfd9xtlz">
+                        <p style="margin-top: -2px;overflow: auto;">bitcoincash:qruadlgq8tfxvjfwl7l6t33c9cfm04a4zqzfd9xtlz</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -94,6 +109,18 @@
       });
     });
     $('a[href="#dashducks"]').click(function(event) {
+      event.preventDefault();
+      $(this).modal({
+        fadeDuration: 100
+      });
+    });
+    $('a[href="#ourlifewithewe"]').click(function(event) {
+      event.preventDefault();
+      $(this).modal({
+        fadeDuration: 100
+      });
+    });
+    $('a[href="#tanglesheep"]').click(function(event) {
       event.preventDefault();
       $(this).modal({
         fadeDuration: 100
